@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--LightGrayishBlue);
+}
+
+.card {
+  max-width: 700px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 5px 8px 30px 0 var(--GrayishBlue);
+}
+
+.card .img-card {
+  max-width: 280px;
+  border-radius: 10px 0 0 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  color: var(--DesaturatedDarkBlue);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--VeryDarkGrayishBlue);
+  font-weight: 700;
+}
+
+.card .main-content {
+  padding: 35px;
+}
+
+.card .main-content .paragraph {
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+.card .main-content .info {
+  justify-content: space-between;
+}
+
+.card .main-content .info .avatar {
+  max-width: 35px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card .main-content .info .bg-icon {
+  background-color: var(--LightGrayishBlue);
+  padding: 5px;
+  width: 32px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.card .main-content .info .bg-icon .icon-share {
+  width: 15px;
+}
+
+.card .main-content .info .bg-icon:hover {
+  background-color: var(--DesaturatedDarkBlue);
+}
+
+.card .main-content .info .bg-icon:hover .icon-share {
+  filter: brightness(0) invert(1);
+}
