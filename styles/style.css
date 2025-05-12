@@ -109,7 +109,7 @@ h6 {
   padding: 15px 20px;
   border-radius: 10px;
   top: 49%;
-  right: 17%;
+  right: 23.7%;
 }
 
 .card .main-content .info .pop-up * {
@@ -124,7 +124,7 @@ h6 {
 .card .main-content .info .triangle {
   position: absolute;
   top: 55%;
-  right: 25.9%;
+  right: 30.35%;
   border-top: 2vh solid var(--VeryDarkGrayishBlue);
   border-left: 1vw solid transparent;
   border-right: 1vw solid transparent;
@@ -142,16 +142,42 @@ h6 {
   overflow: hidden;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 700px) {
+  .card {
+    max-width: 520px;
+  }
+
+  h3,
+  h4 {
+    font-size: 13px;
+  }
+
+  .card .main-content .paragraph,
+  p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 496px) {
+  html,
+  body {
+    display: block;
+    height: auto;
+    align-items: unset;
+    justify-content: unset;
+  }
+
   .flex-container {
     flex-direction: column;
   }
   .card {
     max-width: 320px;
+    margin: 80px auto;
   }
   .main-content {
-    padding: 25px 25px 0 25px !important;
+    padding: 25px 25px 18px 25px !important;
     background-color: #fff;
+    border-radius: 0 0 10px 10px;
   }
   h3 {
     font-size: 17px;
@@ -161,21 +187,36 @@ h6 {
   }
 
   .img-card {
-    max-width: 100%;
+    max-width: 100% !important;
     height: 400px;
     vertical-align: middle;
     border-radius: 10px 10px 0 0 !important;
   }
+
+  .card .main-content .info {
+    justify-content: space-between;
+    position: relative; /* <-- Añadir esta línea */
+  }
+
   .info,
   .info div:first-of-type {
     flex-direction: row;
   }
+
+  .card .main-content .info .triangle {
+    display: none;
+  }
+
   .pop-up {
     flex-direction: row;
-    padding: 15px 160px 20px !important;
+    padding: 15px 95px 20px !important;
     top: -15% !important;
     right: -9% !important;
     border-radius: 0 0 10px 10px !important;
+  }
+
+  .sr-only {
+    transform: translateX(-400px);
   }
   .bg-icon,
   .info {
