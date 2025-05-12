@@ -156,6 +156,17 @@ h6 {
   p {
     font-size: 10px;
   }
+
+  .card .main-content .info .pop-up {
+    padding: 15px 20px;
+    border-radius: 10px;
+    top: 65%;
+    right: 33%;
+  }
+
+  .card .main-content .info .triangle {
+    display: none;
+  }
 }
 
 @media (max-width: 496px) {
