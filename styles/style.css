@@ -195,7 +195,7 @@ h6 {
 
   .card .main-content .info {
     justify-content: space-between;
-    position: relative; /* <-- Añadir esta línea */
+    position: relative;
   }
 
   .info,
@@ -208,7 +208,7 @@ h6 {
   }
 
   .pop-up {
-    flex-direction: row;
+    flex-direction: row-reverse;
     padding: 15px 95px 20px !important;
     top: -15% !important;
     right: -9% !important;
